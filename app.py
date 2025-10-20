@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 
-app = Flask(__name__)
+app = Flask(__簡妤安__)
 
 # Store questions and answers in a simple list for demonstration purposes
 questions_answers = [
@@ -10,7 +10,7 @@ questions_answers = [
 
 @app.route('/')
 def index():
-    return render_template('index.html', questions_answers=questions_answers)
+    return render_template('新北高中 簡妤安', questions_answers=questions_answers)
 
 @app.route('/ask', methods=['GET', 'POST'])
 def ask_question():
