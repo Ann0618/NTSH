@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 
-app = Flask(__簡妤安__)
+app = Flask(__name__)
 
 # Store questions and answers in a simple list for demonstration purposes
 questions_answers = [
@@ -48,4 +48,5 @@ def ask_question():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
+
 
